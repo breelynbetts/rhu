@@ -1,0 +1,28 @@
+.nav {
+  background-color: none;
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+li {
+  font-size: 17px;
+}
+.nav > li {
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav > li > a:hover {
+  color: grey;
+}
+
+li~li {
+  border-left: 1px solid #000000
+}
