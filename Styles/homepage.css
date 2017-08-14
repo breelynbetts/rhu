@@ -4,10 +4,12 @@
   list-style: none;
   text-align: center;
   padding: 10px 0px 10px 0px;
+
 }
 
 li {
-  font-size: 17px;
+  font-size: 30px;
+  font-family:'Faster One', cursive;
 }
 .nav > li {
   display: inline-block;
@@ -25,4 +27,13 @@ li {
 
 li~li {
   border-left: 1px solid #000000
+}
+
+
+h1 {
+
+  font-family: 'Bungee Outline', cursive;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
 }
