@@ -26,3 +26,7 @@ li {
 li~li {
   border-left: 1px solid #000000
 }
+
+h1 {
+  text-align: center;
+}
