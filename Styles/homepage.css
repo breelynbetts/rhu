@@ -1,3 +1,10 @@
+svg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .nav {
   background-color: none;
   color: #ffffff;
@@ -23,10 +30,6 @@ li {
 
 .nav > li > a:hover {
   color: grey;
-}
-
-li~li {
-  border-left: 1px solid #000000
 }
 
 h1 {
