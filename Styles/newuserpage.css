@@ -1,0 +1,28 @@
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  font-size: 46px;
+  text-shadow: 2px 2px #53D8BC;
+}
+
+.newuserform {
+  text-align: center;
+  background-color: #53D8BC;
+  margin: 10%;
+  margin-top: 70px;
+  padding: 80px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+input {
+  margin-left: 10px;
+}
