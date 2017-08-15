@@ -17,22 +17,23 @@
 import webapp2
 import jinja2
 
+
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
 
-class SignInHandler(webapp2.RequestHandler):
-    def get(self):
-        template = env.get_template('signinpage.html')
-        self.response.write(template.render())
-
-class NewUserHandler(webapp2.RequestHandler):
-    def get(self):
-        template = env.get_template('newuser.html')
-        self.response.write(template.render())
-    def post(self):
-        self.request.get('emailsignup')
-        self.request.get('passwordsignup')
-        self.request.get('passwordsignup_confirm')
-        self.request.get('destination')
+# class SignInHandler(webapp2.RequestHandler):
+#     def get(self):
+#         template = env.get_template('signinpage.html')
+#         self.response.write(template.render())
+#
+# class NewUserHandler(webapp2.RequestHandler):
+#     def get(self):
+#         template = env.get_template('newuser.html')
+#         self.response.write(template.render())
+#     def post(self):
+#         self.request.get('emailsignup')
+#         self.request.get('passwordsignup')
+#         self.request.get('passwordsignup_confirm')
+#         self.request.get('destination')
 
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
@@ -58,22 +59,18 @@ class StudentForumHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('studentforum.html')
         self.response.write(template.render())
+
 class GoogleMapsHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('map.html')
         self.response.write(template.render())
 
-
-
-
 app = webapp2.WSGIApplication([
-    ('/', SignInHandler),
-    ('/newuser', NewUserHandler),
+    ('/', HomeHandler),
     ('/home', HomeHandler),
     ('/adventure', AdventureHandler),
     ('/culture', CultureHandler),
     ('/transportation', TransportationHandler),
     ('/studentforum', StudentForumHandler),
     ('/map', GoogleMapsHandler)
-
 ], debug=True)
