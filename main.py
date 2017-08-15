@@ -17,6 +17,7 @@
 import webapp2
 import jinja2
 
+
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
 
 class SignInHandler(webapp2.RequestHandler):
@@ -58,16 +59,14 @@ class StudentForumHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('studentforum.html')
         self.response.write(template.render())
+
 class GoogleMapsHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('map.html')
         self.response.write(template.render())
 
-
-
-
 app = webapp2.WSGIApplication([
-    ('/', SignInHandler),
+    ('/', HomeHandler),
     ('/newuser', NewUserHandler),
     ('/home', HomeHandler),
     ('/adventure', AdventureHandler),
@@ -75,5 +74,4 @@ app = webapp2.WSGIApplication([
     ('/transportation', TransportationHandler),
     ('/studentforum', StudentForumHandler),
     ('/map', GoogleMapsHandler)
-
 ], debug=True)
