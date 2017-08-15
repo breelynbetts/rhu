@@ -31,23 +31,45 @@ h1 {
   text-shadow: 2px 2px #53D8BC;
 }
 
+h2{
+  font-size: 35px;
+}
 .phrases {
   list-style: none;
+
 }
 
 .word {
   color: black;
-  font-family: bold;
+  font-family: 'oswald';
   margin-top: 2%;
   font-size: 30px;
 }
 
 .pronounce {
-  font-family: cursive;
+  font-family: 'oswald', cursive;
   font-size: 20px;
 }
 
 .english {
   color: grey;
   font-size: 20px;
+}
+body {
+  font-family: 'oswald';
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  background-color: lightgrey;
+}
+
+.type {
+  background-color: cornflowerblue;
+  width: 30%;
+  height: 100px;
+  margin-left: 2.5%;
 }
