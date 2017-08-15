@@ -65,6 +65,11 @@ class GoogleMapsHandler(webapp2.RequestHandler):
         template = env.get_template('map.html')
         self.response.write(template.render())
 
+class UserPreferencesHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('preferences.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
     ('/home', HomeHandler),
@@ -72,5 +77,6 @@ app = webapp2.WSGIApplication([
     ('/culture', CultureHandler),
     ('/transportation', TransportationHandler),
     ('/studentforum', StudentForumHandler),
-    ('/map', GoogleMapsHandler)
+    ('/map', GoogleMapsHandler),
+    ('/preferences', UserPreferencesHandler),
 ], debug=True)

@@ -6,11 +6,11 @@ svg{
 }
 
 * {
-  background-color: #FAFAFA;
+  /*background-color: #FAFAFA;*/
 }
 
 .nav {
-  background-color: none;
+  /*background-color: none;*/
   color: #ffffff;
   list-style: none;
   text-align: center;

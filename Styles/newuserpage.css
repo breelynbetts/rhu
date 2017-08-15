@@ -1,7 +1,27 @@
+
+li {
+  font-size: 40px;
+  font-family:'Faster One', cursive;
+}
+.nav > li {
+  display: inline-block;
+  padding: 0px 6px 0px 6px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav > li > a:hover {
+  color: grey;
+}
+
 h1 {
   font-family: 'Bungee Shade', cursive;
   text-align: center;
-  font-size: 46px;
+  font-size: 50px;
+  letter-spacing: 2px;
   text-shadow: 2px 2px #53D8BC;
 }
 
