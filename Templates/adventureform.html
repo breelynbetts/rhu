@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Faster+One|Oswald" rel="stylesheet">
     <link rel='stylesheet' href='Styles/adventure.css'>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1PR-Z-T8y5jRwZGXA358D9Py29AmI4oY&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="Scripts/adventure.js"> </script>
     <title>form.html</title>
   </head>
   <header>
@@ -26,14 +30,15 @@
   <option value="an event">an event</option>
   <option value="a cultural event">a cultural event</option>
       </select>
+    </form>
 
   <input id="pac-input" class="controls" type="text"
-    placeholder="Enter a location">
-  <div id="map"></div>
-  <div id="infowindow-content">
-    <span id="place-name"  class="title"></span><br>
-    Place ID <span id="place-id"></span><br>
-    <span id="place-address"></span>
-  </div>
+     placeholder="Enter a location">
+ <div id="map"></div>
+ <div id="infowindow-content">
+   <span id="place-name"  class="title"></span><br>
+   Place ID <span id="place-id"></span><br>
+   <span id="place-address"></span>
+ </div>
   </body>
 </html>
