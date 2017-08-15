@@ -35,6 +35,8 @@ h1 {
 #map {
         height: 50%;
         width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
