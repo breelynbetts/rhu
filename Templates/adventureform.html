@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Faster+One|Oswald" rel="stylesheet">
-    <link rel='stylesheet' href='../Styles/adventure.css'>
+    <link rel='stylesheet' href='Styles/adventure.css'>
     <title>form.html</title>
   </head>
   <header>
     <h1>Adventure</h1>
     <nav>
       <ul class='nav'>
-        <li><a href="/">Home</a></li>
+        <li><a href="/home">Home</a></li>
       </ul>
    </nav>
  </header>
@@ -25,7 +25,15 @@
   <option value="historical landmarks">historical landmarks</option>
   <option value="an event">an event</option>
   <option value="a cultural event">a cultural event</option>
-
       </select>
+
+  <input id="pac-input" class="controls" type="text"
+    placeholder="Enter a location">
+  <div id="map"></div>
+  <div id="infowindow-content">
+    <span id="place-name"  class="title"></span><br>
+    Place ID <span id="place-id"></span><br>
+    <span id="place-address"></span>
+  </div>
   </body>
 </html>

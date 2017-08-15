@@ -24,6 +24,16 @@ class SignInHandler(webapp2.RequestHandler):
         template = env.get_template('signinpage.html')
         self.response.write(template.render())
 
+class NewUserHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('newuser.html')
+        self.response.write(template.render())
+    def post(self):
+        self.request.get('emailsignup')
+        self.request.get('passwordsignup')
+        self.request.get('passwordsignup_confirm')
+        self.request.get('destination')
+
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('homepage.html')
@@ -54,6 +64,7 @@ class StudentForumHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', SignInHandler),
+    ('/newuser', NewUserHandler),
     ('/home', HomeHandler),
     ('/adventure', AdventureHandler),
     ('/culture', CultureHandler),
