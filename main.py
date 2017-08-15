@@ -19,6 +19,11 @@ import jinja2
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
 
+class SignInHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('signinpage.html')
+        self.response.write(template.render())
+
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('homepage.html')
@@ -48,7 +53,8 @@ class StudentForumHandler(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', HomeHandler),
+    ('/', SignInHandler),
+    ('/home', HomeHandler),
     ('/adventure', AdventureHandler),
     ('/culture', CultureHandler),
     ('/transportation', TransportationHandler),
