@@ -5,12 +5,10 @@
   text-align: center;
   padding: 0px 0px 0px 0px;
   margin-top: -10px;
-}
-
-li {
   font-size: 40px;
   font-family:'Faster One', cursive;
 }
+
 .nav > li {
   display: inline-block;
   padding: 0px 6px 0px 6px;
@@ -31,4 +29,25 @@ h1 {
   font-size: 50px;
   letter-spacing: 2px;
   text-shadow: 2px 2px #53D8BC;
+}
+
+.phrases {
+  list-style: none;
+}
+
+.word {
+  color: black;
+  font-family: bold;
+  margin-top: 2%;
+  font-size: 30px;
+}
+
+.pronounce {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.english {
+  color: grey;
+  font-size: 20px;
 }
