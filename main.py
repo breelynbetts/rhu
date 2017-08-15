@@ -17,10 +17,41 @@
 import webapp2
 import jinja2
 
-class MainHandler(webapp2.RequestHandler):
+env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
+
+class HomeHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        template = env.get_template('homepage.html')
+        self.response.write(template.render())
+
+class AdventureHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('adventureform.html')
+        self.response.write(template.render())
+
+class TransportationHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('transportation.html')
+        self.response.write(template.render())
+
+class CultureHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('culture.html')
+        self.response.write(template.render())
+
+class StudentForumHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('studentforum.html')
+        self.response.write(template.render())
+
+
+
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', HomeHandler),
+    ('/adventure', AdventureHandler),
+    ('/culture', CultureHandler),
+    ('/transportation', TransportationHandler),
+    ('/studentforum', StudentForumHandler),
+
 ], debug=True)
