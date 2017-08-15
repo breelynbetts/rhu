@@ -1,20 +1,19 @@
-
 .nav {
   background-color: none;
-  color: #ffffff;
+  color: black;
   list-style: none;
   text-align: center;
-  padding: 10px 0px 10px 0px;
-
+  padding: 0px 0px 0px 0px;
+  margin-top: -10px;
 }
 
 li {
-  font-size: 30px;
+  font-size: 40px;
   font-family:'Faster One', cursive;
 }
 .nav > li {
   display: inline-block;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 6px 0px 6px;
 }
 
 .nav > li > a {
@@ -26,13 +25,10 @@ li {
   color: grey;
 }
 
-li~li {
-  border-left: 1px solid #000000
-}
-
 h1 {
-  font-family: 'Bungee Outline', cursive;
+  font-family: 'Bungee Shade', cursive;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 2px;
+  color: #53D8BC;
 }
