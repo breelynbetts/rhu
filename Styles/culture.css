@@ -51,10 +51,7 @@ body {
   display: flex;
   width: 100%;
   height: 30%;
-<<<<<<< HEAD
   background-color: #d7ede9;
-=======
->>>>>>> 19a0a52236555f7cdddecb5468ccb72220d67a85
 }
 
 .type1 {
@@ -182,4 +179,28 @@ h4 {
   text-align: center;
   margin-top: 4%;
   text-shadow: 1px 2px grey;
+}
+h5 {
+  font-size: 18px;
+  margin-left: 5%;
+  margin-top: -3%;
+}
+
+h6 {
+  font-size: 14px;
+  margin-left: 6%;
+}
+
+.help {
+  padding-top: 0px;
+  height: 20px;
+}
+
+.etiquette {
+  text-align:center;
+}
+
+.protip {
+  list-style: none;
+  margin-left: 1%;
 }
