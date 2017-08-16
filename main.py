@@ -16,6 +16,9 @@
 #
 import webapp2
 import jinja2
+from datetime import datetime
+import time
+from comments import Comment
 
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
@@ -57,6 +60,24 @@ class CultureHandler(webapp2.RequestHandler):
 
 class StudentForumHandler(webapp2.RequestHandler):
     def get(self):
+        query = Comment.query()
+        query_result = query.order(-Comment.time)
+        query_result = query_result.fetch()
+        var = {
+        "comments": query_result
+        }
+        template = env.get_template('studentforum.html')
+        self.response.write(template.render(var))
+    def post(self):
+        comment = Comment (
+            # name = self.request.get('name')
+            time = datetime.now(),
+            content = self.request.get('comment'),
+            type = self.request.get('type'),
+        )
+        comment.put()
+        time.sleep(.2)
+        self.redirect('/studentforum')
         template = env.get_template('studentforum.html')
         self.response.write(template.render())
 

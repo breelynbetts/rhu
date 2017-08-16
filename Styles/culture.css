@@ -9,17 +9,12 @@
   font-family:'Faster One', cursive;
 }
 
-.nav > li {
-  display: inline-block;
-  padding: 0px 6px 0px 6px;
-}
-
-.nav > li > a {
+.nav > .home > a {
   text-decoration: none;
   color: black;
 }
 
-.nav > li > a:hover {
+.nav > .home > a:hover {
   color: grey;
 }
 
@@ -31,18 +26,11 @@ h1 {
   text-shadow: 2px 2px #53D8BC;
 }
 
-
-
-h2{
-  font-size: 35px;
-  text-align: center;
-}
-
 .word {
   color: black;
   font-family: 'oswald';
   margin-top: 2%;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .pronounce {
@@ -61,55 +49,98 @@ body {
 .flex-container {
   display: -webkit-flex;
   display: flex;
-  width: 96%;
-  margin-left: 2%;
+  width: 100%;
   height: 30%;
+<<<<<<< HEAD
   background-color: #d7ede9;
+=======
+>>>>>>> 19a0a52236555f7cdddecb5468ccb72220d67a85
 }
 
 .type1 {
   width: 100%;
   height: 100px;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 4%;
+  text-shadow: 1px 2px grey;
+
 }
 
 .type2 {
   width: 100%;
   height: 100px;
+  font-size: 35px;
+  text-shadow: 1px 2px grey;
+  margin-top: 4%;
 }
 
 .type3 {
   width: 100%;
   height: 100px;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 4%;
+  text-shadow: 1px 2px grey;
 }
 
 .flex-item1 {
   width: 30%;
+<<<<<<< HEAD
   margin-left: 2.5%;
 
+=======
+  margin-left: 3%;
+  background-color: rgba(83, 216, 188, 0.5);
+>>>>>>> 19a0a52236555f7cdddecb5468ccb72220d67a85
 }
 
 .flex-item2 {
   width: 30%;
-  margin-left: 2.5%;
+  margin-left: 2%;
+  text-align: center;
+  background-color: rgba(83, 216, 188, 0.5);
 }
 
 .flex-item3 {
   width: 30%;
-  margin-left: 2.5%;
+  margin-left: 2%;
+  background-color: rgba(83, 216, 188, 0.5);
 }
 
 .list {
   list-style: none;
+  list-style-position: inside;
+  padding-left: 4%;
 
 }
 
 .list2 {
   list-style: none;
-
-  text-align: center;
+  list-style-position: inside;
+  padding-left: 0px;
 }
 
 .food {
   font-size: 25px;
   font-family: 'oswald';
+}
+
+.description {
+  color: grey;
+}
+
+h3 {
+  font-size: 28px;
+  margin-top: 4%;
+  margin-left: inherit;
+}
+.manners {
+  font-size: 20px;
+  margin-left: 4%;
+  margin-right: 2%;
+}
+h4 {
+  font-size: 18px;
+  text-align: center;
 }
