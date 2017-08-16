@@ -23,18 +23,20 @@
       <p> What Type of Comment is this?
          <select name="type">
               <option></option>
-               <option value="packing">Packing</option>
-               <option value="safety">Safety</option>
-               <option value="studying">Studying</option>
-                <option value="recommendations">Recommendations</option>
+               <option value="Packing">Packing</option>
+               <option value="Safety">Safety</option>
+               <option value="Studying">Studying</option>
+                <option value="Recommendations">Recommendations</option>
          </select>
     </form>
     {% for c in comments%}
       <div>
-      <h2>  {{c.name}} </h2>
+      <h3>  {{c.email}} </h3>
         {{c.time}}
-        {{c.content}}
-        {{c.type}}
+      <br>
+      {{c.type}}:
+      {{c.content}}
+
       </div>
     {% endfor %}
   </body>
