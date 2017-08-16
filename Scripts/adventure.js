@@ -15,6 +15,7 @@ function initMap() {
         var infowindow = new google.maps.InfoWindow();
         var infowindowContent = document.getElementById('infowindow-content');
         infowindow.setContent(infowindowContent);
+
         var marker = new google.maps.Marker({
           map: map
         });
@@ -49,4 +50,4 @@ function initMap() {
               place.formatted_address;
           infowindow.open(map, marker);
         });
-      }
+}
