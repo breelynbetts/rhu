@@ -32,3 +32,33 @@ h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px #53D8BC;
 }
+
+form {
+margin: 0 auto;
+text-align: center;
+}
+
+p, h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+input {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.time {
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  color: grey;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+h3{
+    border-bottom: 6px solid #53D8BC;
+}
