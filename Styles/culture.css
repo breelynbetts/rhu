@@ -51,6 +51,10 @@ body {
   display: flex;
   width: 100%;
   height: 30%;
+<<<<<<< HEAD
+  background-color: #d7ede9;
+=======
+>>>>>>> 19a0a52236555f7cdddecb5468ccb72220d67a85
 }
 
 .type1 {

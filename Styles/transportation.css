@@ -1,3 +1,4 @@
+
 .nav {
   background-color: none;
   color: black;
@@ -39,4 +40,9 @@ h3{
 p{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+}
+
+a {
+  color: #53D8BC;
+  text-decoration: none;
 }
