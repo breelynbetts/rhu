@@ -31,23 +31,85 @@ h1 {
   text-shadow: 2px 2px #53D8BC;
 }
 
-.phrases {
-  list-style: none;
+
+
+h2{
+  font-size: 35px;
+  text-align: center;
 }
 
 .word {
   color: black;
-  font-family: bold;
+  font-family: 'oswald';
   margin-top: 2%;
   font-size: 30px;
 }
 
 .pronounce {
-  font-family: cursive;
+  font-family: 'oswald', cursive;
   font-size: 20px;
 }
 
 .english {
   color: grey;
   font-size: 20px;
+}
+body {
+  font-family: 'oswald';
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 96%;
+  margin-left: 2%;
+  height: 30%;
+  background-color: lightgrey;
+}
+
+.type1 {
+  width: 100%;
+  height: 100px;
+}
+
+.type2 {
+  width: 100%;
+  height: 100px;
+}
+
+.type3 {
+  width: 100%;
+  height: 100px;
+}
+
+.flex-item1 {
+  width: 30%;
+  margin-left: 2.5%;
+  
+}
+
+.flex-item2 {
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+.flex-item3 {
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+.list {
+  list-style: none;
+
+}
+
+.list2 {
+  list-style: none;
+
+  text-align: center;
+}
+
+.food {
+  font-size: 25px;
+  font-family: 'oswald';
 }
