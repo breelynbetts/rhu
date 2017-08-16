@@ -46,3 +46,9 @@ a {
   color: #53D8BC;
   text-decoration: none;
 }
+
+.flex-container {
+  margin: 2%;
+  background-color: grey;
+  
+}
