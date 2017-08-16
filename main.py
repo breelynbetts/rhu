@@ -14,34 +14,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 import webapp2
 import jinja2
 from datetime import datetime
 import time
 from comments import Comment
+from google.appengine.api import users
 
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
-
-# class SignInHandler(webapp2.RequestHandler):
-#     def get(self):
-#         template = env.get_template('signinpage.html')
-#         self.response.write(template.render())
-#
-# class NewUserHandler(webapp2.RequestHandler):
-#     def get(self):
-#         template = env.get_template('newuser.html')
-#         self.response.write(template.render())
-#     def post(self):
-#         self.request.get('emailsignup')
-#         self.request.get('passwordsignup')
-#         self.request.get('passwordsignup_confirm')
-#         self.request.get('destination')
 
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('homepage.html')
         self.response.write(template.render())
+
 
 class AdventureHandler(webapp2.RequestHandler):
     def get(self):
@@ -69,8 +57,9 @@ class StudentForumHandler(webapp2.RequestHandler):
         template = env.get_template('studentforum.html')
         self.response.write(template.render(var))
     def post(self):
+        user = users.get_current_user()
         comment = Comment (
-            # name = self.request.get('name')
+            email = user.nickname(),
             time = datetime.now(),
             content = self.request.get('comment'),
             type = self.request.get('type'),
