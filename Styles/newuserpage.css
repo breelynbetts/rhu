@@ -17,6 +17,10 @@ li {
   color: grey;
 }
 
+.nav {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Bungee Shade', cursive;
   text-align: center;

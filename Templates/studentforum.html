@@ -16,7 +16,28 @@
  </header>
 
   <body>
+    <form action='/studentforum' method='post'>
+      <textarea rows='10' cols="80" name="comment" maxlength="140" placeholder="Leave a traveling tip">
+      </textarea>
+      <input type="submit" value="Comment"></input>
+      <p> What Type of Comment is this?
+         <select name="type">
+              <option></option>
+               <option value="Packing">Packing</option>
+               <option value="Safety">Safety</option>
+               <option value="Studying">Studying</option>
+                <option value="Recommendations">Recommendations</option>
+         </select>
+    </form>
+    {% for c in comments%}
+      <div>
+      <h3>  {{c.email}} </h3>
+        {{c.time}}
+      <br>
+      {{c.type}}:
+      {{c.content}}
 
-
+      </div>
+    {% endfor %}
   </body>
 </html>
