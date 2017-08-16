@@ -53,10 +53,12 @@ input {
   margin-top: -15px;
   margin-bottom: 25px;
   color: grey;
+  font-weight: 100;
 }
 
 .content {
   margin-bottom: 40px;
+  font-size: 18px;
 }
 
 h3{

@@ -45,6 +45,19 @@ h1 {
 }
 
 #logout {
-  position: absolute;
-  float: right;
+  color:red;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  display:inline-block;
+  text-decoration: none !important;
+  margin:0 auto;
+  color: grey;
+  border: solid 2px grey;
+  padding: 3px 8px 3px 8px;
+}
+
+.container{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
 }
