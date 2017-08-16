@@ -58,10 +58,7 @@ function onclick() {
   var geocoder = new google.maps.Geocoder;
   console.log($(this).find(':selected').val());
   console.log($('#landmarks').val() !== $(this).find(':selected').val());
-  if ($(this).find(':selected').val() !== $('#landmarks').val()) {
-    console.log('helloooo');
-    return;
-  }
+
   // var array = [
   //   new google.maps.LatLng(50.6687, 7.2064),
   //   new google.maps.LatLng(50.7369, 7.1012),
@@ -69,7 +66,7 @@ function onclick() {
   //   new google.maps.LatLng(50.7247, 7.0931),
   // ];
 
-    array = [
+    landmarks = [
       {
         name: 'Castle Drachenburg',
         location: new google.maps.LatLng(50.6687, 7.2064),
@@ -94,8 +91,95 @@ function onclick() {
         address: 'Meckenheimer Allee 171, 53115 Bonn, Germany',
         place_id: 'ChIJFQmeKJvhvkcRb56waUqcEL8'
       },
-
     ]
+
+    eat = [
+      {
+        name: 'YUNICO - JAPANESE FINE DINING',
+        location: new google.maps.LatLng(50.717958, 7.152408),
+        address: 'Am Bonner Bogen 1, 53227 Bonn, Germany',
+        place_id: 'ChIJOQ8y5KzmvkcRy8A_Sn4dJa8'
+      },
+      {
+        name: 'El Tarascon',
+        location: new google.maps.LatLng(50.724233, 7.089445),
+        address: 'Clemens-August-Straße 2, 53115 Bonn, Germany',
+        place_id: 'ChIJg3-s05rhvkcRe29SnKEFCUU'
+      },
+      {
+        name: 'Strandhaus',
+        location: new google.maps.LatLng(50.742320, 7.09155),
+        address: 'Georgstraße 28, 53111 Bonn, Germany',
+        place_id: 'ChIJcTa11brhvkcRN-t8LauRgV0'
+      },
+    ]
+
+    study = [
+      {
+        name: 'Bibliothek der Friedrich-Ebert-Stiftung',
+        location: new google.maps.LatLng(50.7020, 7.1346),
+        address: 'Godesberger Allee 149, 53175 Bonn, Germany',
+        place_id: 'ChIJDzxLyfrjvkcRpTHlbOqjJcY'
+      },
+      {
+        name: 'University and District Library Bonn-Rhein-Sieg',
+        location: new google.maps.LatLng(50.7802,  7.1821),
+        address: 'Grantham-Allee 20, 53757 Sankt Augustin, Germany',
+        place_id: 'ChIJq2OHOEXnvkcR_eSEFv-Ocow'
+      },
+      {
+        name: 'Stadtbibliothek Bonn - Central Library',
+        location: new google.maps.LatLng(50.7338, 7.0970),
+        address: ' (Haus der Bildung), Mülheimer Pl. 1, 53111 Bonn, Germany',
+        place_id: 'ChIJa_vr5aHhvkcRXUx3kj7n6XU'
+      },
+    ]
+
+    shop = [
+      {
+        name: 'Schildergasse',
+        location: new google.maps.LatLng(50.935162926, 6.951496194),
+        address: 'Schildergasse, 50667 Köln, Germany',
+        place_id: 'ChIJKSLrhK4lv0cRB5CRuSH0Rr8'
+      },
+      {
+        name: 'Zeil',
+        location: new google.maps.LatLng(50.108666232, 8.683497266),
+        address: 'Zeil, 60547 Frankfurt am Main, Germany',
+        place_id: 'ChIJj_7-laQOvUcRSqO9exFl-SU'
+      },
+      {
+        name: 'Königsallee',
+        location: new google.maps.LatLng(	51.222282, 6.779263),
+        address: 'Königsallee, Düsseldorf, Germany',
+        place_id: 'ChIJJ4K2Bj3KuEcR7JZ_1-86iIE'
+      },
+    ]
+
+     culture = [
+      {
+        name: 'Oktoberfest-Zimmerfrei.de',
+        location: new google.maps.LatLng(48.125499498 , 11.542831162),
+        address: 'Maistraße 10, 80337 München, Germany',
+        place_id: 'ChIJqX2wzVvfnUcR29qh-tEQst4'
+      },
+    ]
+
+    var arrays = {}
+    arrays[$('#landmarks').val()] = landmarks;
+    arrays[$('#eat').val()] = eat;
+    arrays[$('#study').val()] = study;
+    arrays[$('#shop').val()] = shop;
+    arrays[$('#culture').val()] = culture;
+
+
+
+    var array = arrays[$(this).find(':selected').val()];
+    if (array === undefined) {
+      console.log('invalid input');
+      return;
+    }
+
 
   var selection = array[Math.floor(Math.random() * array.length)]
   console.log(selection);
@@ -122,6 +206,9 @@ function onclick() {
   });
   marker.setVisible(true);
   infowindow.open(map, marker);
+
+
+
 
 
   // var adr = geocoder.geocode(selection.location, function(results, status) {

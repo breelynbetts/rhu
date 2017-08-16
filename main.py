@@ -28,8 +28,8 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader('Templates'))
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('homepage.html')
-        self.response.write(template.render())
-
+        logout_url = users.create_logout_url('/')
+        self.response.write(template.render({'logout_url': logout_url}))
 
 class AdventureHandler(webapp2.RequestHandler):
     def get(self):
