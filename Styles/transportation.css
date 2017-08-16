@@ -1,3 +1,4 @@
+
 .nav {
   background-color: none;
   color: black;
@@ -39,4 +40,39 @@ h3{
 p{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+}
+
+a {
+  color: #53D8BC;
+  text-decoration: none;
+}
+
+
+
+.column-6-left {
+  width: 11%;
+  background-color: #d7ede9;
+  padding: 20px;
+  border: 5px solid #5e9d92;
+  float: left;
+  margin-right: 23px;
+}
+
+.column-6-middle {
+  width: 11%;
+  background-color: #d7ede9;
+  padding: 20px;
+  border: 5px solid #5e9d92;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.column-6-right {
+  width: 11%;
+  background-color: #d7ede9;
+  padding: 20px;
+  border: 5px solid #5e9d92;
+  float: right;
+  margin-left: 23px;
 }

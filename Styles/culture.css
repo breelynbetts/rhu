@@ -64,7 +64,7 @@ body {
   width: 96%;
   margin-left: 2%;
   height: 30%;
-  background-color: lightgrey;
+  background-color: #d7ede9;
 }
 
 .type1 {
@@ -85,7 +85,7 @@ body {
 .flex-item1 {
   width: 30%;
   margin-left: 2.5%;
-  
+
 }
 
 .flex-item2 {

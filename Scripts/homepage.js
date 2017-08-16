@@ -5,5 +5,5 @@ s = Snap(window.innerWidth, window.innerHeight);
   var s = Snap("#svg");
   var circle = s.circle(90,120,80);
 // }
-//
+
 // $(document).on('ready', draw);
