@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade|Faster+One|Oswald" rel="stylesheet">
     <link rel='stylesheet' href='Styles/adventure.css'>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1PR-Z-T8y5jRwZGXA358D9Py29AmI4oY&libraries=places&callback=initMap"
@@ -22,16 +23,15 @@
   <body>
     <h2>Adventure List</h2>
     <form>
-      <select name="What are you looking for?">
+      <select id='dropdown' name="What are you looking for?">
   <option value="a place to study">a place to study</option>
   <option value="a place to eat">a place to eat</option>
   <option value="a place to shop">a place to shop</option>
-  <option value="historical landmarks">historical landmarks</option>
+  <option id='landmarks' value="historical landmarks">historical landmarks</option>
   <option value="an event">an event</option>
   <option value="a cultural event">a cultural event</option>
       </select>
     </form>
-
   <input id="pac-input" class="controls" type="text"
      placeholder="Enter a location">
  <div id="map"></div>
