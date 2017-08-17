@@ -24,7 +24,7 @@ li {
 }
 .nav > li {
   display: block;
-  padding-top: 60px;
+  padding-top: 45px;
 }
 
 .nav > li > a {
@@ -54,6 +54,10 @@ h1 {
   color: grey;
   border: solid 2px grey;
   padding: 3px 8px 3px 8px;
+}
+
+#logout > a:hover {
+  color: black;
 }
 
 .container{
