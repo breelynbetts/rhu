@@ -36,27 +36,30 @@ h1 {
 
 h3{
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
+  text-decoration: underline;
+  
 }
 
 p{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  padding: 10px 50px 30px 50px;
+  padding: 10px 40px 12px 40px;
+  font-size: 19px
 }
 
 a {
-  color: white;
+  color: darkgrey;
   text-decoration: none;
+  text-shadow: -1px 1px lightgrey;
 }
 
 .flex-container {
   margin: 2%;
   background-color: rgba(83, 216, 188, 0.3);
-  
   text-align: center;
-  padding: 10px 50px 30px 50px;
+  padding: 10px 40px 10px 40px;
 }
 .flex-container2 {
   display: -webkit-flex;
@@ -64,6 +67,7 @@ a {
   width: 96%;
   height: 30%;
   margin-left: 2%;
+  margin-top: 1%;
 }
 
 .type2 {
@@ -79,5 +83,6 @@ a {
 .flex-item2 {
   width:50%;
   background-color: rgba(83, 216, 188, 0.3);
-  margin-left: 2%
+  margin-left: 2%;
+  padding: 5px 5px 5px 5px;
 }
