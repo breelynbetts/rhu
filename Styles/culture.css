@@ -210,3 +210,16 @@ h6 {
   font-size: 17px;
   margin-left: 4%;
 }
+
+#tmcmini {
+  width: 175px;
+  height: 202px;
+  border: solid 5px rgba(83, 216, 188, 0.5);
+  margin-left: 58px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
