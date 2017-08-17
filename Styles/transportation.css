@@ -33,22 +33,51 @@ h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px #53D8BC;
 }
+
 h3{
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
+  text-align: center;
 }
+
 p{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  padding: 10px 50px 30px 50px;
 }
 
 a {
-  color: #53D8BC;
+  color: white;
   text-decoration: none;
 }
 
 .flex-container {
   margin: 2%;
-  background-color: grey;
+  background-color: rgba(83, 216, 188, 0.3);
   
+  text-align: center;
+  padding: 10px 50px 30px 50px;
+}
+.flex-container2 {
+  display: -webkit-flex;
+  display: flex;
+  width: 96%;
+  height: 30%;
+  margin-left: 2%;
+}
+
+.type2 {
+  width: 100%;
+}
+
+.flex-item1 {
+  width:50%;
+  background-color: rgba(83, 216, 188, 0.3);
+  padding: 5px 5px 5px 5px;
+}
+
+.flex-item2 {
+  width:50%;
+  background-color: rgba(83, 216, 188, 0.3);
+  margin-left: 2%
 }
