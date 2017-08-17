@@ -36,7 +36,7 @@ h1 {
         height: 50%;
         width: 50%;
         margin-left: 25%;
-        margin-top: 5%;
+        margin-top: 4%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -74,3 +74,16 @@ h1 {
       #map #infowindow-content {
         display: inline;
       }
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+form {
+margin: 0 auto;
+text-align: center;
+margin-top: -10px;
+}
