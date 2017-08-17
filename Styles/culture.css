@@ -220,6 +220,10 @@ h6 {
 }
 
 a {
+  color: darkgrey;
   text-decoration: none;
-  color: white;
+}
+
+a:hover {
+    color: white;
 }
