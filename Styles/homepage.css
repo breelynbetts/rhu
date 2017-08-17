@@ -45,23 +45,24 @@ h1 {
 }
 
 #logout {
-  color:red;
   font-family: 'Oswald', sans-serif;
   text-align: center;
   display:inline-block;
   text-decoration: none !important;
   margin:0 auto;
-  color: grey;
-  border: solid 2px grey;
+  color: black;
+  border: solid 2px black;
   padding: 3px 8px 3px 8px;
 }
 
-#logout > a:hover {
-  color: black;
+#logout:hover {
+  color: darkgrey;
+  border-color: darkgrey;
 }
 
 .container{
   width: 100%;
   text-align: center;
   font-size: 16px;
+  height: 0px;
 }
